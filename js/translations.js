@@ -129,7 +129,7 @@ const translations = {
     }
 };
 
-let currentLanguage = 'en';
+let currentLanguage = 'pt';
 
 function setLanguage(lang) {
     currentLanguage = lang;
@@ -155,7 +155,7 @@ function updatePageLanguage() {
 }
 
 function initLanguage() {
-    const savedLanguage = localStorage.getItem('language') || 'en';
+    const savedLanguage = localStorage.getItem('language') || 'pt';
     currentLanguage = savedLanguage;
     
     // Update language button states
