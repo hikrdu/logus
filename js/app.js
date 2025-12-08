@@ -1,45 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
     initLanguage();
-    initTheme();
     setupMenuToggle();
     setupLanguageToggle();
-    setupThemeToggle();
     setupButtons();
     setupSmoothScroll();
+    setupCarousel();
 });
-
-// ======================== THEME MANAGEMENT ========================
-
-function initTheme() {
-    const savedTheme = localStorage.getItem('theme') || 'light';
-    if (savedTheme === 'dark') {
-        document.body.classList.add('dark-mode');
-        updateThemeIcon(true);
-    } else {
-        document.body.classList.remove('dark-mode');
-        updateThemeIcon(false);
-    }
-}
-
-function setupThemeToggle() {
-    const themeToggle = document.querySelector('.theme-toggle');
-    themeToggle.addEventListener('click', function() {
-        const isDark = document.body.classList.toggle('dark-mode');
-        localStorage.setItem('theme', isDark ? 'dark' : 'light');
-        updateThemeIcon(isDark);
-    });
-}
-
-function updateThemeIcon(isDark) {
-    const icon = document.querySelector('.theme-toggle i');
-    if (isDark) {
-        icon.classList.remove('fa-moon');
-        icon.classList.add('fa-sun');
-    } else {
-        icon.classList.remove('fa-sun');
-        icon.classList.add('fa-moon');
-    }
-}
 
 // ======================== LANGUAGE MANAGEMENT ========================
 
@@ -138,6 +104,98 @@ function openWhatsAppChat() {
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     
     window.open(whatsappUrl, '_blank');
+}
+
+// ======================== CAROUSEL MANAGEMENT ========================
+
+function setupCarousel() {
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.hero-slide');
+    const dots = document.querySelectorAll('.carousel-dots .dot');
+    const totalSlides = slides.length;
+    let autoplayInterval;
+
+    function showSlide(index) {
+        // Wrap around
+        if (index >= totalSlides) {
+            currentSlide = 0;
+        } else if (index < 0) {
+            currentSlide = totalSlides - 1;
+        } else {
+            currentSlide = index;
+        }
+
+        // Update active slide
+        slides.forEach(slide => slide.classList.remove('active'));
+        slides[currentSlide].classList.add('active');
+
+        // Update active dot
+        dots.forEach(dot => dot.classList.remove('active'));
+        dots[currentSlide].classList.add('active');
+    }
+
+    function nextSlide() {
+        showSlide(currentSlide + 1);
+    }
+
+    function prevSlide() {
+        showSlide(currentSlide - 1);
+    }
+
+    function startAutoplay() {
+        autoplayInterval = setInterval(nextSlide, 5000);
+    }
+
+    function resetAutoplay() {
+        clearInterval(autoplayInterval);
+        startAutoplay();
+    }
+
+    // Navigation buttons
+    const prevBtn = document.querySelector('.carousel-prev');
+    const nextBtn = document.querySelector('.carousel-next');
+
+    prevBtn.addEventListener('click', function() {
+        prevSlide();
+        resetAutoplay();
+    });
+
+    nextBtn.addEventListener('click', function() {
+        nextSlide();
+        resetAutoplay();
+    });
+
+    // Dot navigation
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', function() {
+            showSlide(index);
+            resetAutoplay();
+        });
+    });
+
+    // Keyboard navigation
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'ArrowLeft') {
+            prevSlide();
+            resetAutoplay();
+        } else if (event.key === 'ArrowRight') {
+            nextSlide();
+            resetAutoplay();
+        }
+    });
+
+    // Pause autoplay on hover
+    const heroSection = document.querySelector('.hero');
+    heroSection.addEventListener('mouseenter', function() {
+        clearInterval(autoplayInterval);
+    });
+
+    heroSection.addEventListener('mouseleave', function() {
+        startAutoplay();
+    });
+
+    // Start autoplay
+    startAutoplay();
 }
 
 // ======================== SMOOTH SCROLLING ========================

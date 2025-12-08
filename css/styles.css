@@ -17,16 +17,6 @@
     --transition: all 0.3s ease;
 }
 
-/* Dark Mode */
-body.dark-mode {
-    --color-white: #1a1a1a;
-    --color-light-gray: #2d2d2d;
-    --color-gray: #3a3a3a;
-    --color-dark-gray: #b0b0b0;
-    --color-black: #ffffff;
-    --color-black-light: #e0e0e0;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -45,11 +35,6 @@ body {
     transition: var(--transition);
 }
 
-body.dark-mode {
-    background-color: var(--color-white);
-    color: var(--color-black);
-}
-
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -65,10 +50,6 @@ body.dark-mode {
     background: linear-gradient(135deg, var(--color-dark-blue) 0%, var(--color-dark-blue-light) 100%);
     box-shadow: var(--shadow-md);
     transition: var(--transition);
-}
-
-body.dark-mode .header {
-    background: linear-gradient(135deg, var(--color-black-light) 0%, #2a2a2a 100%);
 }
 
 .header-top {
@@ -104,26 +85,6 @@ body.dark-mode .header {
 
 .lang-btn:hover {
     background-color: var(--color-gold-light);
-    color: var(--color-dark-blue);
-}
-
-.theme-toggle {
-    background: transparent;
-    border: 2px solid var(--color-gold);
-    color: var(--color-gold);
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: var(--transition);
-    font-size: 16px;
-}
-
-.theme-toggle:hover {
-    background-color: var(--color-gold);
     color: var(--color-dark-blue);
 }
 
@@ -243,9 +204,33 @@ body.dark-mode .header {
     right: 0;
     bottom: 0;
     background: 
+        linear-gradient(135deg, rgba(0, 31, 63, 0.6) 0%, rgba(0, 61, 102, 0.6) 100%),
         radial-gradient(circle at 20% 50%, rgba(212, 175, 55, 0.1) 0%, transparent 50%),
         radial-gradient(circle at 80% 80%, rgba(0, 31, 63, 0.2) 0%, transparent 50%);
     pointer-events: none;
+    z-index: 1;
+}
+
+.hero-carousel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+
+.hero-slide.active {
+    opacity: 1;
+    position: relative;
 }
 
 .hero-content {
@@ -259,6 +244,7 @@ body.dark-mode .header {
     margin-bottom: 20px;
     font-weight: 700;
     letter-spacing: 1px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7), 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 .hero p {
@@ -266,6 +252,71 @@ body.dark-mode .header {
     margin-bottom: 40px;
     color: var(--color-gold);
     font-weight: 300;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7), 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-prev,
+.carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background-color: rgba(212, 175, 55, 0.7);
+    border: none;
+    color: var(--color-dark-blue);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    transition: var(--transition);
+}
+
+.carousel-prev:hover,
+.carousel-next:hover {
+    background-color: var(--color-gold);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-prev {
+    left: 20px;
+}
+
+.carousel-next {
+    right: 20px;
+}
+
+.carousel-dots {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    display: flex;
+    gap: 12px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.dot.active {
+    background-color: var(--color-gold);
+    width: 36px;
+    border-radius: 6px;
+}
+
+.dot:hover {
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 /* ======================== BUTTONS ======================== */
@@ -329,10 +380,6 @@ section h2 {
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
 }
 
-body.dark-mode section h2 {
-    color: var(--color-black-light);
-}
-
 section h2::after {
     content: '';
     position: absolute;
@@ -351,14 +398,11 @@ section h2::after {
     background-color: var(--color-light-gray);
 }
 
-body.dark-mode .about {
-    background-color: var(--color-light-gray);
-}
-
 .about-content {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 40px;
+    align-items: center;
 }
 
 .about-text p {
@@ -368,18 +412,10 @@ body.dark-mode .about {
     color: #555;
 }
 
-body.dark-mode .about-text p {
-    color: var(--color-dark-gray);
-}
-
 .about-text h3 {
     font-size: 24px;
     margin: 30px 0 20px 0;
     color: var(--color-dark-blue);
-}
-
-body.dark-mode .about-text h3 {
-    color: var(--color-black-light);
 }
 
 .values-list {
@@ -398,13 +434,29 @@ body.dark-mode .about-text h3 {
     color: #333;
 }
 
-body.dark-mode .values-list li {
-    color: var(--color-black-light);
-}
-
 .values-list i {
     color: var(--color-gold);
     font-size: 18px;
+}
+
+.about-image {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    height: 400px;
+}
+
+.about-img-placeholder {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background: linear-gradient(135deg, var(--color-gray) 0%, var(--color-light-gray) 100%);
+    transition: var(--transition);
+}
+
+.about-image:hover .about-img-placeholder {
+    transform: scale(1.05);
 }
 
 /* ======================== EXAMS SECTION ======================== */
@@ -430,11 +482,6 @@ body.dark-mode .values-list li {
     border: 2px solid transparent;
 }
 
-body.dark-mode .exam-card {
-    background-color: var(--color-light-gray);
-    border-color: var(--color-gray);
-}
-
 .exam-card:hover {
     transform: translateY(-8px);
     border-color: var(--color-gold);
@@ -453,27 +500,15 @@ body.dark-mode .exam-card {
     color: var(--color-dark-blue);
 }
 
-body.dark-mode .exam-card h3 {
-    color: var(--color-black-light);
-}
-
 .exam-card p {
     font-size: 14px;
     color: #666;
     line-height: 1.6;
 }
 
-body.dark-mode .exam-card p {
-    color: var(--color-dark-gray);
-}
-
 /* ======================== GALLERY SECTION ======================== */
 
 .gallery {
-    background-color: var(--color-light-gray);
-}
-
-body.dark-mode .gallery {
     background-color: var(--color-light-gray);
 }
 
@@ -545,10 +580,6 @@ body.dark-mode .gallery {
     margin-top: 20px;
 }
 
-body.dark-mode .gallery-note {
-    color: var(--color-dark-gray);
-}
-
 /* ======================== BLOG SECTION ======================== */
 
 .blog {
@@ -568,10 +599,6 @@ body.dark-mode .gallery-note {
     color: #555;
 }
 
-body.dark-mode .blog-content p {
-    color: var(--color-dark-gray);
-}
-
 .instagram-btn {
     display: inline-flex;
 }
@@ -581,10 +608,6 @@ body.dark-mode .blog-content p {
 .contact {
     background: linear-gradient(135deg, var(--color-dark-blue) 0%, var(--color-dark-blue-light) 100%);
     color: var(--color-white);
-}
-
-body.dark-mode .contact {
-    background: linear-gradient(135deg, var(--color-black-light) 0%, #2a2a2a 100%);
 }
 
 .contact-wrapper {
@@ -634,11 +657,6 @@ body.dark-mode .contact {
     text-align: center;
 }
 
-body.dark-mode .footer {
-    background-color: var(--color-black-light);
-    color: var(--color-white);
-}
-
 .footer p {
     font-size: 14px;
 }
@@ -673,12 +691,6 @@ body.dark-mode .footer {
         font-size: 11px;
     }
 
-    .theme-toggle {
-        width: 32px;
-        height: 32px;
-        font-size: 14px;
-    }
-
     .nav-wrapper {
         gap: 20px;
     }
@@ -711,10 +723,6 @@ body.dark-mode .footer {
         padding: 120px 20px 20px 20px;
         transition: var(--transition);
         z-index: 999;
-    }
-
-    body.dark-mode .nav-menu {
-        background: linear-gradient(135deg, var(--color-black-light) 0%, #2a2a2a 100%);
     }
 
     .nav-menu.active {
@@ -765,8 +773,41 @@ body.dark-mode .footer {
         font-size: 18px;
     }
 
+    .carousel-prev,
+    .carousel-next {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .carousel-prev {
+        left: 10px;
+    }
+
+    .carousel-next {
+        right: 10px;
+    }
+
+    .carousel-dots {
+        bottom: 20px;
+        gap: 8px;
+    }
+
+    .dot {
+        width: 10px;
+        height: 10px;
+    }
+
+    .dot.active {
+        width: 28px;
+    }
+
     .about-content {
         grid-template-columns: 1fr;
+    }
+
+    .about-image {
+        height: 300px;
     }
 
     .exams-grid {
@@ -824,6 +865,26 @@ body.dark-mode .footer {
     .btn {
         padding: 12px 24px;
         font-size: 14px;
+    }
+
+    .carousel-prev,
+    .carousel-next {
+        width: 36px;
+        height: 36px;
+        font-size: 16px;
+    }
+
+    .carousel-dots {
+        gap: 6px;
+    }
+
+    .dot {
+        width: 8px;
+        height: 8px;
+    }
+
+    .dot.active {
+        width: 20px;
     }
 
     section h2 {

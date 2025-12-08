@@ -12,6 +12,14 @@ const translations = {
         // Hero
         'hero-title': 'Advanced Ultrasound Imaging',
         'hero-subtitle': 'Precision Diagnosis for Your Health',
+        'hero-slide-technology': 'State-of-the-Art Technology',
+        'hero-slide-technology-desc': 'Latest equipment for accurate diagnostic imaging',
+        'hero-slide-professionals': 'Expert Medical Professionals',
+        'hero-slide-professionals-desc': 'Experienced radiologists and technicians dedicated to your care',
+        'hero-slide-services': 'Comprehensive Diagnostic Services',
+        'hero-slide-services-desc': 'From obstetric to vascular imaging, we cover all your needs',
+        'hero-slide-patient': 'Patient-Centered Care',
+        'hero-slide-patient-desc': 'Comfortable facilities and compassionate service for every patient',
 
         // Buttons
         'btn-schedule': 'Schedule an Appointment',
@@ -76,6 +84,14 @@ const translations = {
         // Hero
         'hero-title': 'Imagem Avançada por Ultrassom',
         'hero-subtitle': 'Diagnóstico Preciso para Sua Saúde',
+        'hero-slide-technology': 'Tecnologia de Ponta',
+        'hero-slide-technology-desc': 'Equipamentos mais modernos para diagnóstico preciso',
+        'hero-slide-professionals': 'Profissionais Médicos Experientes',
+        'hero-slide-professionals-desc': 'Radiologistas e técnicos experientes dedicados ao seu cuidado',
+        'hero-slide-services': 'Serviços Diagnósticos Abrangentes',
+        'hero-slide-services-desc': 'De imagem obstétrica a vascular, cobrimos todas as suas necessidades',
+        'hero-slide-patient': 'Atendimento Centrado no Paciente',
+        'hero-slide-patient-desc': 'Instalações confortáveis e atendimento compassivo para cada paciente',
 
         // Buttons
         'btn-schedule': 'Agendar uma Consulta',

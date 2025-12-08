@@ -15,9 +15,6 @@
                 <button class="lang-btn" data-lang="pt">PT</button>
                 <button class="lang-btn active" data-lang="en">EN</button>
             </div>
-            <button class="theme-toggle" aria-label="Toggle dark mode">
-                <i class="fas fa-moon"></i>
-            </button>
         </div>
 
         <nav class="navbar">
@@ -49,12 +46,57 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero Section - Carousel -->
     <section id="home" class="hero">
-        <div class="hero-content">
-            <h1 data-i18n="hero-title">Advanced Ultrasound Imaging</h1>
-            <p data-i18n="hero-subtitle">Precision Diagnosis for Your Health</p>
-            <button class="btn btn-primary appointment-btn" data-i18n="btn-schedule">Schedule an Appointment</button>
+        <div class="hero-carousel">
+            <div class="hero-slide active">
+                <div class="hero-content">
+                    <h1 data-i18n="hero-title">Advanced Ultrasound Imaging</h1>
+                    <p data-i18n="hero-subtitle">Precision Diagnosis for Your Health</p>
+                    <button class="btn btn-primary appointment-btn" data-i18n="btn-schedule">Schedule an Appointment</button>
+                </div>
+            </div>
+            <div class="hero-slide">
+                <div class="hero-content">
+                    <h1 data-i18n="hero-slide-technology">State-of-the-Art Technology</h1>
+                    <p data-i18n="hero-slide-technology-desc">Latest equipment for accurate diagnostic imaging</p>
+                    <button class="btn btn-primary appointment-btn" data-i18n="btn-schedule">Schedule an Appointment</button>
+                </div>
+            </div>
+            <div class="hero-slide">
+                <div class="hero-content">
+                    <h1 data-i18n="hero-slide-professionals">Expert Medical Professionals</h1>
+                    <p data-i18n="hero-slide-professionals-desc">Experienced radiologists and technicians dedicated to your care</p>
+                    <button class="btn btn-primary appointment-btn" data-i18n="btn-schedule">Schedule an Appointment</button>
+                </div>
+            </div>
+            <div class="hero-slide">
+                <div class="hero-content">
+                    <h1 data-i18n="hero-slide-services">Comprehensive Diagnostic Services</h1>
+                    <p data-i18n="hero-slide-services-desc">From obstetric to vascular imaging, we cover all your needs</p>
+                    <button class="btn btn-primary appointment-btn" data-i18n="btn-schedule">Schedule an Appointment</button>
+                </div>
+            </div>
+            <div class="hero-slide">
+                <div class="hero-content">
+                    <h1 data-i18n="hero-slide-patient">Patient-Centered Care</h1>
+                    <p data-i18n="hero-slide-patient-desc">Comfortable facilities and compassionate service for every patient</p>
+                    <button class="btn btn-primary appointment-btn" data-i18n="btn-schedule">Schedule an Appointment</button>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-prev" aria-label="Previous slide">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="carousel-next" aria-label="Next slide">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        <div class="carousel-dots">
+            <button class="dot active" data-slide="0"></button>
+            <button class="dot" data-slide="1"></button>
+            <button class="dot" data-slide="2"></button>
+            <button class="dot" data-slide="3"></button>
+            <button class="dot" data-slide="4"></button>
         </div>
     </section>
 
@@ -85,6 +127,9 @@
                             <span>Excellence in Service</span>
                         </li>
                     </ul>
+                </div>
+                <div class="about-image">
+                    <img src="assets/images/about-clinic.jpg" alt="LOGUS Clinic Image" class="about-img-placeholder">
                 </div>
             </div>
         </div>
@@ -203,7 +248,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p data-i18n="footer-text">&copy; 2025 LOGUS - Ultrasound Clinic. All rights reserved.</p>
+            <p data-i18n="footer-text">&copy; <span id="current-year"></span> LOGUS - Ultrasound Clinic. All rights reserved.</p>
         </div>
     </footer>
 
