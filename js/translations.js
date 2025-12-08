@@ -47,7 +47,7 @@ const translations = {
         'gallery-exam-room': 'State-of-the-art Examination Room',
         'gallery-equipment': 'Advanced Ultrasound Equipment',
         'gallery-comfort': 'Comfortable Patient Environment',
-        'gallery-note': 'Note: Images are placeholders. Replace with actual facility photos.',
+        'gallery-note': 'Note: Images are placeholders.',
 
         // Blog
         'blog-title': 'Blog & News',
@@ -111,11 +111,11 @@ const translations = {
         'gallery-exam-room': 'Sala de Exame de Última Geração',
         'gallery-equipment': 'Equipamento Ultrassonográfico Avançado',
         'gallery-comfort': 'Ambiente Confortável para Pacientes',
-        'gallery-note': 'Nota: Imagens são placeholders. Substitua com fotos reais das instalações.',
+        'gallery-note': 'Nota: Imagens são placeholders. Fotos reais das instalações posteriormente.',
 
         // Blog
         'blog-title': 'Blog & Notícias',
-        'blog-intro': 'Mantenha-se atualizado com as últimas informações sobre imaging ultrassonográfico e saúde. Siga-nos no Instagram para dicas e atualizações regulares.',
+        'blog-intro': 'Mantenha-se atualizado com as últimas informações sobre exames ultrassonográficos e saúde. Siga-nos no Instagram para dicas e atualizações regulares.',
 
         // Contact
         'contact-title': 'Entre em Contato',
