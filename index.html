@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LOGUS - Ultrasound Clinic</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
+
 <body>
     <!-- Header with Navigation -->
     <header class="header">
@@ -21,10 +23,8 @@
             <div class="container">
                 <div class="nav-wrapper">
                     <div class="logo">
-                        <div class="logo-text">
-                            <span class="logo-main">LOG</span><span class="logo-us">US</span>
-                        </div>
-                        <p class="logo-subtitle" data-i18n="clinic">Ultrasound Clinic</p>
+                        <img src="assets/images/logo_branco.png" alt="LOGUS Logo" class="logo-img logo-desktop">
+                        <img src="assets/images/icone_branco.png" alt="LOGUS Icon" class="logo-img logo-mobile">
                     </div>
 
                     <button class="menu-toggle" aria-label="Toggle menu">
@@ -35,8 +35,8 @@
 
                     <ul class="nav-menu">
                         <li><a href="#home" data-i18n="nav-home">Home</a></li>
-                        <li><a href="#about" data-i18n="nav-about">About Us</a></li>
-                        <li><a href="#exams" data-i18n="nav-exams">Types of Exams</a></li>
+                        <li><a href="#about" data-i18n="nav-about">About us</a></li>
+                        <li><a href="#exams" data-i18n="nav-exams">Types of exams</a></li>
                         <li><a href="#gallery" data-i18n="nav-photos">Photos</a></li>
                         <li><a href="#blog" data-i18n="nav-blog">Blog</a></li>
                         <li><a href="#contact" data-i18n="nav-contact">Contact</a></li>
@@ -53,35 +53,53 @@
                 <div class="hero-content">
                     <h1 data-i18n="hero-title">Advanced Ultrasound Imaging</h1>
                     <p data-i18n="hero-subtitle">Precision Diagnosis for Your Health</p>
-                    <button class="btn btn-primary appointment-btn" data-i18n="btn-schedule">Schedule an Appointment</button>
+                    <button class="btn btn-primary appointment-btn whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i>
+                        <span data-i18n="btn-schedule">Schedule an appointment</span>
+                    </button>
                 </div>
             </div>
             <div class="hero-slide">
                 <div class="hero-content">
                     <h1 data-i18n="hero-slide-technology">State-of-the-Art Technology</h1>
                     <p data-i18n="hero-slide-technology-desc">Latest equipment for accurate diagnostic imaging</p>
-                    <button class="btn btn-primary appointment-btn" data-i18n="btn-schedule">Schedule an Appointment</button>
+                    <button class="btn btn-primary appointment-btn whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i>
+                        <span data-i18n="btn-schedule">Schedule an appointment</span>
+                    </button>
                 </div>
             </div>
             <div class="hero-slide">
                 <div class="hero-content">
                     <h1 data-i18n="hero-slide-professionals">Expert Medical Professionals</h1>
-                    <p data-i18n="hero-slide-professionals-desc">Experienced radiologists and technicians dedicated to your care</p>
-                    <button class="btn btn-primary appointment-btn" data-i18n="btn-schedule">Schedule an Appointment</button>
+                    <p data-i18n="hero-slide-professionals-desc">Experienced radiologists and technicians dedicated to
+                        your care</p>
+                    <button class="btn btn-primary appointment-btn whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i>
+                        <span data-i18n="btn-schedule">Schedule an appointment</span>
+                    </button>
                 </div>
             </div>
             <div class="hero-slide">
                 <div class="hero-content">
                     <h1 data-i18n="hero-slide-services">Comprehensive Diagnostic Services</h1>
-                    <p data-i18n="hero-slide-services-desc">From obstetric to vascular imaging, we cover all your needs</p>
-                    <button class="btn btn-primary appointment-btn" data-i18n="btn-schedule">Schedule an Appointment</button>
+                    <p data-i18n="hero-slide-services-desc">From obstetric to vascular imaging, we cover all your needs
+                    </p>
+                    <button class="btn btn-primary appointment-btn whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i>
+                        <span data-i18n="btn-schedule">Schedule an appointment</span>
+                    </button>
                 </div>
             </div>
             <div class="hero-slide">
                 <div class="hero-content">
                     <h1 data-i18n="hero-slide-patient">Patient-Centered Care</h1>
-                    <p data-i18n="hero-slide-patient-desc">Comfortable facilities and compassionate service for every patient</p>
-                    <button class="btn btn-primary appointment-btn" data-i18n="btn-schedule">Schedule an Appointment</button>
+                    <p data-i18n="hero-slide-patient-desc">Comfortable facilities and compassionate service for every
+                        patient</p>
+                    <button class="btn btn-primary appointment-btn whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i>
+                        <span data-i18n="btn-schedule">Schedule an appointment</span>
+                    </button>
                 </div>
             </div>
         </div>
@@ -107,24 +125,46 @@
             <div class="about-content">
                 <div class="about-text">
                     <p data-i18n="about-desc1">
-                        LOGUS is a specialized ultrasound diagnostic clinic dedicated to providing the highest quality imaging services. With state-of-the-art equipment and experienced professionals, we ensure accurate and reliable diagnostic results.
+                        LOGUS is a clinic in Ribeirão Preto specializing in general ultrasound that combines medical
+                        expertise, cutting-edge technology, and personalized care. Our mission is to offer accurate,
+                        safe exams conducted by professionals certified by the Brazilian College of Radiology.
                     </p>
                     <p data-i18n="about-desc2">
-                        Our commitment to excellence extends to every aspect of patient care, from personalized attention to comfortable facilities. We believe in combining advanced technology with compassionate service to deliver exceptional healthcare experiences.
+                        With a focus on high diagnostic sensitivity, the clinic seeks to provide a welcoming and
+                        informative experience, where each patient is treated with respect, attentiveness, and
+                        transparency.
+                    </p>
+                    <p data-i18n="about-desc3">
+                        LOGUS offers all types of ultrasound exams, with strict quality protocols and a comfortable
+                        environment, designed to provide safety from the first contact.
                     </p>
                     <h3 data-i18n="about-values">Our Values</h3>
                     <ul class="values-list">
-                        <li data-i18n="value-precision">
+                        <li>
                             <i class="fas fa-check"></i>
-                            <span>Precision and Accuracy</span>
+                            <span data-i18n="value-excellence"><strong>Technical excellence:</strong> scientific rigor,
+                                diagnostic depth, and attention to detail.</span>
                         </li>
-                        <li data-i18n="value-care">
+                        <li>
                             <i class="fas fa-check"></i>
-                            <span>Patient-Centered Care</span>
+                            <span data-i18n="value-human"><strong>Humanization:</strong> each exam is a relationship of
+                                care, listening, and respect.</span>
                         </li>
-                        <li data-i18n="value-excellence">
+                        <li>
                             <i class="fas fa-check"></i>
-                            <span>Excellence in Service</span>
+                            <span data-i18n="value-transparency"><strong>Transparency:</strong> total clarity for
+                                doctors and patients.</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i>
+                            <span data-i18n="value-proffessional"><strong>Professionalism:</strong> ethics, commitment,
+                                and responsibility in
+                                diagnosis.</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i>
+                            <span data-i18n="value-accuracy"><strong>Accuracy:</strong> quality over volume; adequate
+                                time, attentive gaze.</span>
                         </li>
                     </ul>
                 </div>
@@ -143,27 +183,32 @@
                 <div class="exam-card">
                     <i class="fas fa-heartbeat"></i>
                     <h3 data-i18n="exam-abdominal">Abdominal Ultrasound</h3>
-                    <p data-i18n="exam-abdominal-desc">Comprehensive imaging of abdominal organs including liver, kidney, pancreas, and spleen.</p>
+                    <p data-i18n="exam-abdominal-desc">Comprehensive imaging of abdominal organs including liver,
+                        kidney, pancreas, and spleen.</p>
                 </div>
                 <div class="exam-card">
                     <i class="fas fa-venus"></i>
                     <h3 data-i18n="exam-obstetric">Obstetric Ultrasound</h3>
-                    <p data-i18n="exam-obstetric-desc">Specialized ultrasound for pregnancy monitoring and fetal development assessment.</p>
+                    <p data-i18n="exam-obstetric-desc">Specialized ultrasound for pregnancy monitoring and fetal
+                        development assessment.</p>
                 </div>
                 <div class="exam-card">
                     <i class="fas fa-lungs"></i>
                     <h3 data-i18n="exam-thyroid">Thyroid Ultrasound</h3>
-                    <p data-i18n="exam-thyroid-desc">Detailed imaging of the thyroid gland to detect nodules and evaluate thyroid function.</p>
+                    <p data-i18n="exam-thyroid-desc">Detailed imaging of the thyroid gland to detect nodules and
+                        evaluate thyroid function.</p>
                 </div>
                 <div class="exam-card">
                     <i class="fas fa-droplet"></i>
                     <h3 data-i18n="exam-vascular">Vascular Ultrasound</h3>
-                    <p data-i18n="exam-vascular-desc">Doppler ultrasound to assess blood flow and detect vascular abnormalities.</p>
+                    <p data-i18n="exam-vascular-desc">Doppler ultrasound to assess blood flow and detect vascular
+                        abnormalities.</p>
                 </div>
                 <div class="exam-card">
                     <i class="fas fa-bone"></i>
                     <h3 data-i18n="exam-musculoskeletal">Musculoskeletal Ultrasound</h3>
-                    <p data-i18n="exam-musculoskeletal-desc">Imaging of joints, tendons, and muscles to diagnose injuries and inflammation.</p>
+                    <p data-i18n="exam-musculoskeletal-desc">Imaging of joints, tendons, and muscles to diagnose
+                        injuries and inflammation.</p>
                 </div>
                 <div class="exam-card">
                     <i class="fas fa-shield-heart"></i>
@@ -198,7 +243,8 @@
                     </div>
                 </div>
             </div>
-            <p class="gallery-note" data-i18n="gallery-note">Note: Images are placeholders. Replace with actual facility photos.</p>
+            <p class="gallery-note" data-i18n="gallery-note">Note: Images are placeholders. Replace with actual facility
+                photos.</p>
         </div>
     </section>
 
@@ -207,10 +253,11 @@
         <div class="container">
             <h2 data-i18n="blog-title">Blog & News</h2>
             <div class="blog-content">
-                <p data-i18n="blog-intro">Stay updated with the latest insights about ultrasound imaging and health. Follow us on Instagram for regular tips and updates.</p>
-                <a href="#" class="btn btn-secondary instagram-btn" target="_blank" data-i18n="btn-instagram">
+                <p data-i18n="blog-intro">Stay updated with the latest insights about ultrasound imaging and health.
+                    Follow us on Instagram for regular tips and updates.</p>
+                <a href="#" class="btn btn-secondary instagram-btn" target="_blank">
                     <i class="fab fa-instagram"></i>
-                    <span>Follow on Instagram</span>
+                    <span data-i18n="btn-instagram">Follow on Instagram</span>
                 </a>
             </div>
         </div>
@@ -224,22 +271,24 @@
                 <div class="contact-info">
                     <h3 data-i18n="contact-location">Location</h3>
                     <p class="address" data-i18n="contact-address">
-                        Medical Condominium<br>
-                        Ribeirão Preto, SP - Brasil
+                        R. Maringá, 151 - Alto da Boa Vista<br>
+                        Ribeirão Preto - SP, Brasil
                     </p>
                     <p data-i18n="contact-hours">
                         <strong data-i18n="hours-label">Hours:</strong><br>
                         Monday - Friday: 8:00 AM - 6:00 PM<br>
                         Saturday: 9:00 AM - 1:00 PM
                     </p>
-                    <button class="btn btn-primary whatsapp-btn" data-i18n="btn-whatsapp">
+                    <button class="btn btn-primary whatsapp-btn">
                         <i class="fab fa-whatsapp"></i>
-                        <span>Contact on WhatsApp</span>
+                        <span data-i18n="btn-whatsapp">Contact on WhatsApp</span>
                     </button>
                 </div>
                 <div class="contact-map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.2876578947226!2d-46.6561!3d-23.5505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0480b1%3A0x0!2sSao%20Paulo%20Medical%20Center!5e0!3m2!1sen!2sbr!4v1640000000000"
-                            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.91376272488!2d-47.813612623882214!3d-21.19558447896541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b9bedb7bb6cba9%3A0x8377c4ec92e5389e!2sR.%20Maring%C3%A1%2C%20151%20-%20Alto%20da%20Boa%20Vista%2C%20Ribeir%C3%A3o%20Preto%20-%20SP%2C%2014025-560!5e0!3m2!1sen!2sbr!4v1767787130373!5m2!1sen!2sbr"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
@@ -248,11 +297,13 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p data-i18n="footer-text">&copy; <span id="current-year"></span> LOGUS - Ultrasound Clinic. All rights reserved.</p>
+            <p data-i18n="footer-text">&copy; <span id="current-year"></span> LOGUS - Ultrasound Clinic. All rights
+                reserved.</p>
         </div>
     </footer>
 
     <script src="js/translations.js"></script>
     <script src="js/app.js"></script>
 </body>
+
 </html>

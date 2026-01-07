@@ -3,8 +3,8 @@ const translations = {
         // Navigation
         'clinic': 'Ultrasound Clinic',
         'nav-home': 'Home',
-        'nav-about': 'About Us',
-        'nav-exams': 'Types of Exams',
+        'nav-about': 'About us',
+        'nav-exams': 'Types of exams',
         'nav-photos': 'Photos',
         'nav-blog': 'Blog',
         'nav-contact': 'Contact',
@@ -22,21 +22,24 @@ const translations = {
         'hero-slide-patient-desc': 'Comfortable facilities and compassionate service for every patient',
 
         // Buttons
-        'btn-schedule': 'Schedule an Appointment',
+        'btn-schedule': 'Schedule an appointment',
         'btn-whatsapp': 'Contact on WhatsApp',
         'btn-instagram': 'Follow on Instagram',
 
         // About
         'about-title': 'About LOGUS',
-        'about-desc1': 'LOGUS is a specialized ultrasound diagnostic clinic dedicated to providing the highest quality imaging services. With state-of-the-art equipment and experienced professionals, we ensure accurate and reliable diagnostic results.',
-        'about-desc2': 'Our commitment to excellence extends to every aspect of patient care, from personalized attention to comfortable facilities. We believe in combining advanced technology with compassionate service to deliver exceptional healthcare experiences.',
+        'about-desc1': 'LOGUS is a clinic in Ribeirão Preto specializing in general ultrasound that combines medical expertise, cutting-edge technology, and personalized care. Our mission is to offer accurate, safe exams conducted by professionals certified by the Brazilian College of Radiology.',
+        'about-desc2': 'With a focus on high diagnostic sensitivity, the clinic seeks to provide a welcoming and informative experience, where each patient is treated with respect, attentiveness, and transparency.',
+        'about-desc3': 'LOGUS offers all types of ultrasound exams, with strict quality protocols and a comfortable environment, designed to provide safety from the first contact.',
         'about-values': 'Our Values',
-        'value-precision': 'Precision and Accuracy',
-        'value-care': 'Patient-Centered Care',
-        'value-excellence': 'Excellence in Service',
+        'value-excellence': 'Technical excellence: scientific rigor, diagnostic depth, and attention to detail.',
+        'value-human': 'Humanization: each exam is a relationship of care, listening, and respect.',
+        'value-transparency': 'Transparency: total clarity for doctors and patients.',
+        'value-proffessional': 'Professionalism: ethics, commitment, and responsibility in diagnosis.',
+        'value-accuracy': 'Accuracy: quality over volume; adequate time, attentive gaze.',
 
         // Exams
-        'exams-title': 'Types of Exams',
+        'exams-title': 'Types of exams',
         'exam-abdominal': 'Abdominal Ultrasound',
         'exam-abdominal-desc': 'Comprehensive imaging of abdominal organs including liver, kidney, pancreas, and spleen.',
         'exam-obstetric': 'Obstetric Ultrasound',
@@ -64,7 +67,7 @@ const translations = {
         // Contact
         'contact-title': 'Contact Us',
         'contact-location': 'Location',
-        'contact-address': 'Medical Condominium<br>Ribeirão Preto, SP - Brazil',
+        'contact-address': 'R. Maringa, 151 - Alto da Boa Vista<br>Ribeirao Preto - SP, Brazil',
         'contact-hours': 'Hours:<br>Monday - Friday: 8:00 AM - 5:00 PM<br>Saturday: 9:00 AM - 12:00 PM',
         'hours-label': 'Hours:',
 
@@ -75,8 +78,8 @@ const translations = {
         // Navigation
         'clinic': 'Clínica de Ultrassom',
         'nav-home': 'Início',
-        'nav-about': 'Sobre Nós',
-        'nav-exams': 'Tipos de Exames',
+        'nav-about': 'Sobre nós',
+        'nav-exams': 'Tipos de exames',
         'nav-photos': 'Fotos',
         'nav-blog': 'Blog',
         'nav-contact': 'Contato',
@@ -94,21 +97,24 @@ const translations = {
         'hero-slide-patient-desc': 'Instalações confortáveis e atendimento compassivo para cada paciente',
 
         // Buttons
-        'btn-schedule': 'Agendar uma Consulta',
+        'btn-schedule': 'Agendar uma consulta',
         'btn-whatsapp': 'Entre em Contato via WhatsApp',
         'btn-instagram': 'Siga-nos no Instagram',
 
         // About
         'about-title': 'Sobre a LOGUS',
-        'about-desc1': 'LOGUS é uma clínica de diagnóstico ultrassonográfico especializada, dedicada a fornecer serviços de imagem de alta qualidade. Com equipamentos de ponta e profissionais experientes, garantimos resultados diagnósticos precisos e confiáveis.',
-        'about-desc2': 'Nosso compromisso com a excelência se estende a todos os aspectos do atendimento ao paciente, desde atenção personalizada até instalações confortáveis. Acreditamos em combinar tecnologia avançada com atendimento compassivo para entregar experiências de saúde excepcionais.',
+        'about-desc1': 'A LOGUS é uma clínica, em Ribeirão Preto, especializada em ultrassonografia geral que une experiência médica, tecnologia atualizada e atendimento humanizado. Nossa missão é oferecer exames precisos, seguros e conduzidos por profissionais com título de especialista pelo Colégio Brasileiro de Radiologia.',
+        'about-desc2': 'Com foco em alta sensibilidade diagnóstica, a clínica busca proporcionar uma experiência acolhedora e informativa, onde cada paciente é atendido com respeito, escuta e transparência.',
+        'about-desc3': 'A LOGUS oferece todos os tipos de exames de ultrassom, com protocolos rigorosos de qualidade e um ambiente confortável, pensado para oferecer segurança desde o primeiro contato.',
         'about-values': 'Nossos Valores',
-        'value-precision': 'Precisão e Acurácia',
-        'value-care': 'Atendimento Centrado no Paciente',
-        'value-excellence': 'Excelência no Atendimento',
+        'value-excellence': 'Excelência técnica: rigor científico, profundidade diagnóstica e atenção aos detalhes.',
+        'value-human': 'Humanização: cada exame é uma relação de cuidado, escuta e respeito.',
+        'value-transparency': 'Transparência: clareza total para médicos e pacientes.',
+        'value-proffessional': 'Profissionalismo: ética, comprometimento e responsabilidade no diagnóstico.',
+        'value-accuracy': 'Precisão: qualidade acima de volume; tempo adequado, olhar atento',
 
         // Exams
-        'exams-title': 'Tipos de Exames',
+        'exams-title': 'Tipos de exames',
         'exam-abdominal': 'Ultrassom Abdominal',
         'exam-abdominal-desc': 'Imagens abrangente de órgãos abdominais incluindo fígado, rim, pâncreas e baço.',
         'exam-obstetric': 'Ultrassom Obstétrico',
@@ -136,7 +142,7 @@ const translations = {
         // Contact
         'contact-title': 'Entre em Contato',
         'contact-location': 'Localização',
-        'contact-address': 'Condomínio Médico<br>Ribeirão Preto, SP - Brasil',
+        'contact-address': 'R. Maringá, 151 - Alto da Boa Vista<br>Ribeirão Preto - SP, Brasil',
         'contact-hours': 'Horários:<br>Segunda a Sexta: 8:00 - 17:00<br>Sábado: 9:00 - 12:00',
         'hours-label': 'Horários:',
 

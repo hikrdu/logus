@@ -100,7 +100,7 @@ function openWhatsAppChat() {
     }
     
     // Placeholder phone number - replace with actual clinic number
-    const phoneNumber = '5511999999999'; // Format: country code + area code + number
+    const phoneNumber = '551636007151'; // Format: country code + area code + number
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     
     window.open(whatsappUrl, '_blank');
