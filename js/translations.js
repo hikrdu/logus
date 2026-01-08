@@ -12,14 +12,14 @@ const translations = {
         // Hero
         'hero-title': 'Advanced Ultrasound Imaging',
         'hero-subtitle': 'Precision Diagnosis for Your Health',
-        'hero-slide-technology': 'State-of-the-Art Technology',
-        'hero-slide-technology-desc': 'Latest equipment for accurate diagnostic imaging',
-        'hero-slide-professionals': 'Expert Medical Professionals',
-        'hero-slide-professionals-desc': 'Experienced radiologists and technicians dedicated to your care',
-        'hero-slide-services': 'Comprehensive Diagnostic Services',
-        'hero-slide-services-desc': 'From obstetric to vascular imaging, we cover all your needs',
-        'hero-slide-patient': 'Patient-Centered Care',
-        'hero-slide-patient-desc': 'Comfortable facilities and compassionate service for every patient',
+        'hero-slide-technology': 'Advanced technology',
+        'hero-slide-technology-desc': 'Modern equipment for more accurate diagnoses',
+        'hero-slide-professionals': 'Experienced team',
+        'hero-slide-professionals-desc': 'Medical specialists recognized by the Brazilian College of Radiology',
+        'hero-slide-services': 'General ultrasound',
+        'hero-slide-services-desc': 'Medical specialists in all types of ultrasonography',
+        'hero-slide-patient': 'Humanized service',
+        'hero-slide-patient-desc': 'Empathy from reception to delivery of reports',
 
         // Buttons
         'btn-schedule': 'Schedule an appointment',
@@ -28,7 +28,7 @@ const translations = {
 
         // About
         'about-title': 'About LOGUS',
-        'about-desc1': 'LOGUS is a clinic in Ribeirão Preto specializing in general ultrasound that combines medical expertise, cutting-edge technology, and personalized care. Our mission is to offer accurate, safe exams conducted by professionals certified by the Brazilian College of Radiology.',
+        'about-desc1': 'LOGUS is a clinic in Ribeirão Preto specializing in general ultrasound that combines medical expertise, advanced technology, and personalized care. Our mission is to offer accurate, safe exams conducted by professionals certified by the Brazilian College of Radiology.',
         'about-desc2': 'With a focus on high diagnostic sensitivity, the clinic seeks to provide a welcoming and informative experience, where each patient is treated with respect, attentiveness, and transparency.',
         'about-desc3': 'LOGUS offers all types of ultrasound exams, with strict quality protocols and a comfortable environment, designed to provide safety from the first contact.',
         'about-values': 'Our Values',
@@ -58,6 +58,8 @@ const translations = {
         'gallery-exam-room': 'State-of-the-art Examination Room',
         'gallery-equipment': 'Advanced Ultrasound Equipment',
         'gallery-comfort': 'Comfortable Patient Environment',
+        'gallery-easy-parking': 'Easy parking',
+        'gallery-human-service': 'Humanized service',
         'gallery-note': 'Note: Images are placeholders.',
 
         // Blog
@@ -70,6 +72,7 @@ const translations = {
         'contact-address': 'R. Maringa, 151 - Alto da Boa Vista<br>Ribeirao Preto - SP, Brazil',
         'contact-hours': 'Hours:<br>Monday - Friday: 8:00 AM - 5:00 PM<br>Saturday: 9:00 AM - 12:00 PM',
         'hours-label': 'Hours:',
+        'contact-phone': 'Phone:',
 
         // Footer
         'footer-text': '© 2025 LOGUS - Ultrasound Clinic. All rights reserved.'
@@ -87,14 +90,14 @@ const translations = {
         // Hero
         'hero-title': 'Imagem Avançada por Ultrassom',
         'hero-subtitle': 'Diagnóstico Preciso para Sua Saúde',
-        'hero-slide-technology': 'Tecnologia de Ponta',
-        'hero-slide-technology-desc': 'Equipamentos mais modernos para diagnóstico preciso',
-        'hero-slide-professionals': 'Profissionais Médicos Experientes',
-        'hero-slide-professionals-desc': 'Radiologistas e técnicos experientes dedicados ao seu cuidado',
-        'hero-slide-services': 'Serviços Diagnósticos Abrangentes',
-        'hero-slide-services-desc': 'De imagem obstétrica a vascular, cobrimos todas as suas necessidades',
-        'hero-slide-patient': 'Atendimento Centrado no Paciente',
-        'hero-slide-patient-desc': 'Instalações confortáveis e atendimento compassivo para cada paciente',
+        'hero-slide-technology': 'Tecnologia avançada',
+        'hero-slide-technology-desc': 'Equipamentos modernos para diagnósticos mais precisos',
+        'hero-slide-professionals': 'Equipe experiente',
+        'hero-slide-professionals-desc': 'Médicos especialistas reconhecidos pelo Colégio Brasileiro de Radiologia',
+        'hero-slide-services': 'Ultrassonografia geral',
+        'hero-slide-services-desc': 'Médicos especialistas em todos os tipo de ultrassonografia',
+        'hero-slide-patient': 'Atendimento humanizado',
+        'hero-slide-patient-desc': 'Empatia desde a recepção até a entrega dos laudos',
 
         // Buttons
         'btn-schedule': 'Agendar uma consulta',
@@ -103,7 +106,7 @@ const translations = {
 
         // About
         'about-title': 'Sobre a LOGUS',
-        'about-desc1': 'A LOGUS é uma clínica, em Ribeirão Preto, especializada em ultrassonografia geral que une experiência médica, tecnologia atualizada e atendimento humanizado. Nossa missão é oferecer exames precisos, seguros e conduzidos por profissionais com título de especialista pelo Colégio Brasileiro de Radiologia.',
+        'about-desc1': 'A LOGUS é uma clínica, em Ribeirão Preto, especializada em ultrassonografia geral que une experiência médica, tecnologia avançada e atendimento humanizado. Nossa missão é oferecer exames precisos, seguros e conduzidos por profissionais com título de especialista pelo Colégio Brasileiro de Radiologia.',
         'about-desc2': 'Com foco em alta sensibilidade diagnóstica, a clínica busca proporcionar uma experiência acolhedora e informativa, onde cada paciente é atendido com respeito, escuta e transparência.',
         'about-desc3': 'A LOGUS oferece todos os tipos de exames de ultrassom, com protocolos rigorosos de qualidade e um ambiente confortável, pensado para oferecer segurança desde o primeiro contato.',
         'about-values': 'Nossos Valores',
@@ -133,6 +136,8 @@ const translations = {
         'gallery-exam-room': 'Sala de Exame de Última Geração',
         'gallery-equipment': 'Equipamento Ultrassonográfico Avançado',
         'gallery-comfort': 'Ambiente Confortável para Pacientes',
+        'gallery-easy-parking': 'Estacionamento fácil',
+        'gallery-human-service': 'Atendimento humanizado',
         'gallery-note': 'Nota: Imagens são placeholders. Fotos reais das instalações posteriormente.',
 
         // Blog
@@ -145,6 +150,7 @@ const translations = {
         'contact-address': 'R. Maringá, 151 - Alto da Boa Vista<br>Ribeirão Preto - SP, Brasil',
         'contact-hours': 'Horários:<br>Segunda a Sexta: 8:00 - 17:00<br>Sábado: 9:00 - 12:00',
         'hours-label': 'Horários:',
+        'contact-phone': 'Telefone:',
 
         // Footer
         'footer-text': '© 2025 LOGUS - Clínica de Ultrassom. Todos os direitos reservados.'

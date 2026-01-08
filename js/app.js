@@ -65,7 +65,7 @@ function closeMenu() {
 
 function setupButtons() {
     const appointmentBtns = document.querySelectorAll('.appointment-btn');
-    const whatsappBtn = document.querySelector('.whatsapp-btn');
+    const whatsappBtns = document.querySelectorAll('.whatsapp-btn');
     const instagramBtn = document.querySelector('.instagram-btn');
     
     appointmentBtns.forEach(btn => {
@@ -74,11 +74,11 @@ function setupButtons() {
         });
     });
     
-    if (whatsappBtn) {
-        whatsappBtn.addEventListener('click', function() {
+    whatsappBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
             openWhatsAppChat();
         });
-    }
+    });
     
     if (instagramBtn) {
         instagramBtn.addEventListener('click', function(e) {
