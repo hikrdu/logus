@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LOGUS - Ultrasound Clinic</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 
@@ -181,39 +182,44 @@
             <h2 data-i18n="exams-title">Types of Exams</h2>
             <div class="exams-grid">
                 <div class="exam-card">
-                    <i class="fas fa-heartbeat"></i>
-                    <h3 data-i18n="exam-abdominal">Abdominal Ultrasound</h3>
-                    <p data-i18n="exam-abdominal-desc">Comprehensive imaging of abdominal organs including liver,
-                        kidney, pancreas, and spleen.</p>
-                </div>
-                <div class="exam-card">
                     <i class="fas fa-venus"></i>
+                    <h3 data-i18n="exam-womens-health">Women's Health Ultrasound</h3>
+                    <p data-i18n="exam-womens-health-desc">Comprehensive imaging for women's health including transvaginal, breast and axillary ultrasound.</p>
+                </div>
+                <div class="exam-card">
+                    <i class="fas fa-baby"></i>
                     <h3 data-i18n="exam-obstetric">Obstetric Ultrasound</h3>
-                    <p data-i18n="exam-obstetric-desc">Specialized ultrasound for pregnancy monitoring and fetal
-                        development assessment.</p>
+                    <p data-i18n="exam-obstetric-desc">Specialized ultrasound including simple exams, morphological assessments, obstetric Doppler, and <strong>4D ultrasound</strong>.</p>
                 </div>
                 <div class="exam-card">
-                    <i class="fas fa-lungs"></i>
-                    <h3 data-i18n="exam-thyroid">Thyroid Ultrasound</h3>
-                    <p data-i18n="exam-thyroid-desc">Detailed imaging of the thyroid gland to detect nodules and
-                        evaluate thyroid function.</p>
+                    <i class="fas fa-mars"></i>
+                    <h3 data-i18n="exam-mens-health">Men's Health Ultrasound</h3>
+                    <p data-i18n="exam-mens-health-desc">Detailed imaging for men's health including prostate, penile ultrasound, penile Doppler, and pharmacologically-induced erection test.</p>
                 </div>
                 <div class="exam-card">
-                    <i class="fas fa-droplet"></i>
+                    <span class="material-symbols-outlined">oncology</span>
+                    <h3 data-i18n="exam-internal-medicine">Internal Medicine Ultrasound</h3>
+                    <p data-i18n="exam-internal-medicine-desc">Exams related to liver, gallbladder, pancreas, spleen, and urinary system pathologies.</p>
+                </div>
+                <div class="exam-card">
+                    <span class="material-symbols-outlined">cardiology</span>
                     <h3 data-i18n="exam-vascular">Vascular Ultrasound</h3>
-                    <p data-i18n="exam-vascular-desc">Doppler ultrasound to assess blood flow and detect vascular
-                        abnormalities.</p>
+                    <p data-i18n="exam-vascular-desc">Doppler ultrasound to assess venous and arterial blood flow, including carotid imaging.</p>
                 </div>
                 <div class="exam-card">
-                    <i class="fas fa-bone"></i>
+                    <span class="material-symbols-outlined">ulna_radius_alt</span>
                     <h3 data-i18n="exam-musculoskeletal">Musculoskeletal Ultrasound</h3>
-                    <p data-i18n="exam-musculoskeletal-desc">Imaging of joints, tendons, and muscles to diagnose
-                        injuries and inflammation.</p>
+                    <p data-i18n="exam-musculoskeletal-desc">Imaging of joints, muscles, and tendons to diagnose injuries and inflammation.</p>
                 </div>
                 <div class="exam-card">
-                    <i class="fas fa-shield-heart"></i>
-                    <h3 data-i18n="exam-cardiac">Cardiac Ultrasound</h3>
-                    <p data-i18n="exam-cardiac-desc">Echocardiography to evaluate heart structure and function.</p>
+                    <span class="material-symbols-outlined">dermatology</span>
+                    <h3 data-i18n="exam-dermatological">Dermatological Ultrasound</h3>
+                    <p data-i18n="exam-dermatological-desc">Specialized ultrasound imaging for skin and dermatological conditions.</p>
+                </div>
+                <div class="exam-card">
+                    <i class="fas fa-wave-square"></i>
+                    <h3 data-i18n="exam-elastography">Elastography</h3>
+                    <p data-i18n="exam-elastography-desc">Advanced ultrasound technique to assess tissue elasticity and rigidity.</p>
                 </div>
             </div>
         </div>
@@ -224,18 +230,13 @@
         <div class="container">
             <h2 data-i18n="gallery-title">Our Facilities</h2>
             <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="assets/images/exam-room-1.jpg" alt="Exam Room" class="gallery-placeholder">
-                    <!-- <div class="gallery-overlay">
-                        <p data-i18n="gallery-exam-room">State-of-the-art Examination Room</p>
-                    </div> -->
-                </div>
-                <div class="gallery-item">
+                
+                <!-- <div class="gallery-item">
                     <img src="assets/images/RS85-Prestige.png" alt="Exam Room" class="gallery-placeholder">
                     <div class="gallery-overlay">
                         <p data-i18n="gallery-equipment">Advanced Ultrasound Equipment</p>
                     </div>
-                </div>
+                </div> -->
                 <div class="gallery-item">
                     <img src="assets/images/coworking_fachada.jpg" alt="Exam Room" class="gallery-placeholder">
                     <div class="gallery-overlay">
@@ -261,8 +262,7 @@
                     </div>
                 </div>
             </div>
-            <p class="gallery-note" data-i18n="gallery-note">Note: Images are placeholders. Replace with actual facility
-                photos.</p>
+            
         </div>
     </section>
 
