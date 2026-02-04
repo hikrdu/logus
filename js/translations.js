@@ -20,6 +20,12 @@ const translations = {
         'hero-slide-services-desc': 'Medical specialists in all types of ultrasonography',
         'hero-slide-patient': 'Humanized service',
         'hero-slide-patient-desc': 'Empathy from reception to delivery of reports',
+        'hero-slide-comfort': 'Comfortable Environment',
+        'hero-slide-comfort-desc': 'Welcoming atmosphere designed for your tranquility',
+        'hero-slide-quality': 'Quality Assurance',
+        'hero-slide-quality-desc': 'Rigorous protocols ensuring accuracy in every diagnosis',
+        'hero-slide-innovation': 'Innovation & Excellence',
+        'hero-slide-innovation-desc': 'Cutting-edge imaging technology for your health',
 
         // Buttons
         'btn-schedule': 'Schedule an appointment',
@@ -43,7 +49,7 @@ const translations = {
         'exam-womens-health': 'Women\'s Health Ultrasound',
         'exam-womens-health-desc': 'Comprehensive imaging for women\'s health including transvaginal, breast and axillary ultrasound.',
         'exam-obstetric': 'Obstetric Ultrasound',
-        'exam-obstetric-desc': 'Specialized ultrasound including simple exams, morphological assessments, obstetric doppler, and <strong>4D ultrasound</strong>.',
+        'exam-obstetric-desc': 'Specialized ultrasound including <strong>4D ultrasound</strong>, simple exams, morphological assessments and obstetric doppler.',
         'exam-mens-health': 'Men\'s Health Ultrasound',
         'exam-mens-health-desc': 'Detailed imaging for men\'s health including prostate, penile ultrasound, penile doppler, and pharmacologically-induced erection test.',
         'exam-internal-medicine': 'Internal Medicine Ultrasound',
@@ -74,7 +80,7 @@ const translations = {
         'contact-title': 'Contact Us',
         'contact-location': 'Location',
         'contact-address': 'R. Maringa, 151 - Alto da Boa Vista<br>Ribeirao Preto - SP, Brazil',
-        'contact-hours': 'Hours:<br>Monday - Friday: 8:00 AM - 5:00 PM<br>Saturday: 9:00 AM - 12:00 PM',
+        'contact-hours': '<strong>Hours:</strong><br>Monday - Friday: 8:00 AM - 5:00 PM<br>Saturday: 9:00 AM - 12:00 PM',
         'hours-label': 'Hours:',
         'contact-phone': 'Phone:',
 
@@ -102,6 +108,12 @@ const translations = {
         'hero-slide-services-desc': 'Médicos especialistas em todos os tipo de ultrassonografia',
         'hero-slide-patient': 'Atendimento humanizado',
         'hero-slide-patient-desc': 'Empatia desde a recepção até a entrega dos laudos',
+        'hero-slide-comfort': 'Ambiente confortável',
+        'hero-slide-comfort-desc': 'Atmosfera acolhedora pensada para sua tranquilidade',
+        'hero-slide-quality': 'Garantia de qualidade',
+        'hero-slide-quality-desc': 'Protocolos rigorosos garantindo precisão em cada diagnóstico',
+        'hero-slide-innovation': 'Inovação e excelência',
+        'hero-slide-innovation-desc': 'Tecnologia de imagem de ponta para sua saúde',
 
         // Buttons
         'btn-schedule': 'Agendar uma consulta',
@@ -125,7 +137,7 @@ const translations = {
         'exam-womens-health': 'Ultrassonografia da Saúde da Mulher',
         'exam-womens-health-desc': 'Imagens abrangentes para saúde da mulher incluindo transvaginal, mamas e axilas.',
         'exam-obstetric': 'Ultrassonografia Obstétrica',
-        'exam-obstetric-desc': 'Ultrassom especializado incluindo exames simples, avaliações morfológicas, doppler obstétrico e <strong>ultrassom 4D</strong>.',
+        'exam-obstetric-desc': 'Ultrassom especializado incluindo <strong>ultrassom 4D</strong>, exames simples, avaliações morfológicas e doppler obstétrico.',
         'exam-mens-health': 'Ultrassonografia da Saúde do Homem',
         'exam-mens-health-desc': 'Imagens detalhadas para saúde do homem incluindo próstata, ultrassom peniano, doppler peniano e teste de ereção farmaco-induzido.',
         'exam-internal-medicine': 'Ultrassonografia em Medicina Interna',
@@ -156,7 +168,7 @@ const translations = {
         'contact-title': 'Entre em Contato',
         'contact-location': 'Localização',
         'contact-address': 'R. Maringá, 151 - Alto da Boa Vista<br>Ribeirão Preto - SP, Brasil',
-        'contact-hours': 'Horários:<br>Segunda a Sexta: 8:00 - 17:00<br>Sábado: 9:00 - 12:00',
+        'contact-hours': '<strong>Horários:</strong><br>Segunda a Sexta: 8:00 - 17:00<br>Sábado: 9:00 - 12:00',
         'hours-label': 'Horários:',
         'contact-phone': 'Telefone:',
 

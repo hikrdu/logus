@@ -50,7 +50,7 @@
     <!-- Hero Section - Carousel -->
     <section id="home" class="hero">
         <div class="hero-carousel">
-            <div class="hero-slide active">
+            <div class="hero-slide active" style="background-image: url('assets/images/1.png'); background-size: cover; background-position: center;">
                 <div class="hero-content">
                     <h1 data-i18n="hero-title">Advanced Ultrasound Imaging</h1>
                     <p data-i18n="hero-subtitle">Precision Diagnosis for Your Health</p>
@@ -60,7 +60,7 @@
                     </button>
                 </div>
             </div>
-            <div class="hero-slide">
+            <div class="hero-slide" style="background-image: url('assets/images/3.png'); background-size: cover; background-position: center;">
                 <div class="hero-content">
                     <h1 data-i18n="hero-slide-technology">State-of-the-Art Technology</h1>
                     <p data-i18n="hero-slide-technology-desc">Latest equipment for accurate diagnostic imaging</p>
@@ -70,7 +70,7 @@
                     </button>
                 </div>
             </div>
-            <div class="hero-slide">
+            <div class="hero-slide" style="background-image: url('assets/images/4.png'); background-size: cover; background-position: center;">
                 <div class="hero-content">
                     <h1 data-i18n="hero-slide-professionals">Expert Medical Professionals</h1>
                     <p data-i18n="hero-slide-professionals-desc">Experienced radiologists and technicians dedicated to
@@ -81,7 +81,7 @@
                     </button>
                 </div>
             </div>
-            <div class="hero-slide">
+            <div class="hero-slide" style="background-image: url('assets/images/5.png'); background-size: cover; background-position: center;">
                 <div class="hero-content">
                     <h1 data-i18n="hero-slide-services">Comprehensive Diagnostic Services</h1>
                     <p data-i18n="hero-slide-services-desc">From obstetric to vascular imaging, we cover all your needs
@@ -92,11 +92,41 @@
                     </button>
                 </div>
             </div>
-            <div class="hero-slide">
+            <div class="hero-slide" style="background-image: url('assets/images/10.png'); background-size: cover; background-position: center;">
                 <div class="hero-content">
                     <h1 data-i18n="hero-slide-patient">Patient-Centered Care</h1>
                     <p data-i18n="hero-slide-patient-desc">Comfortable facilities and compassionate service for every
                         patient</p>
+                    <button class="btn btn-primary appointment-btn whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i>
+                        <span data-i18n="btn-schedule">Schedule an appointment</span>
+                    </button>
+                </div>
+            </div>
+            <div class="hero-slide" style="background-image: url('assets/images/11.png'); background-size: cover; background-position: center;">
+                <div class="hero-content">
+                    <h1 data-i18n="hero-slide-comfort">Comfortable Environment</h1>
+                    <p data-i18n="hero-slide-comfort-desc">Welcoming atmosphere designed for your tranquility</p>
+                    <button class="btn btn-primary appointment-btn whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i>
+                        <span data-i18n="btn-schedule">Schedule an appointment</span>
+                    </button>
+                </div>
+            </div>
+            <div class="hero-slide" style="background-image: url('assets/images/13.png'); background-size: cover; background-position: center;">
+                <div class="hero-content">
+                    <h1 data-i18n="hero-slide-quality">Quality Assurance</h1>
+                    <p data-i18n="hero-slide-quality-desc">Rigorous protocols ensuring accuracy in every diagnosis</p>
+                    <button class="btn btn-primary appointment-btn whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i>
+                        <span data-i18n="btn-schedule">Schedule an appointment</span>
+                    </button>
+                </div>
+            </div>
+            <div class="hero-slide" style="background-image: url('assets/images/14.png'); background-size: cover; background-position: center;">
+                <div class="hero-content">
+                    <h1 data-i18n="hero-slide-innovation">Innovation & Excellence</h1>
+                    <p data-i18n="hero-slide-innovation-desc">Cutting-edge imaging technology for your health</p>
                     <button class="btn btn-primary appointment-btn whatsapp-btn">
                         <i class="fab fa-whatsapp"></i>
                         <span data-i18n="btn-schedule">Schedule an appointment</span>
@@ -116,6 +146,9 @@
             <button class="dot" data-slide="2"></button>
             <button class="dot" data-slide="3"></button>
             <button class="dot" data-slide="4"></button>
+            <button class="dot" data-slide="5"></button>
+            <button class="dot" data-slide="6"></button>
+            <button class="dot" data-slide="7"></button>
         </div>
     </section>
 
@@ -169,9 +202,6 @@
                         </li>
                     </ul>
                 </div>
-                <div class="about-image">
-                    <img src="assets/images/about-clinic.jpg" alt="LOGUS Clinic Image" class="about-img-placeholder">
-                </div>
             </div>
         </div>
     </section>
@@ -189,7 +219,7 @@
                 <div class="exam-card">
                     <i class="fas fa-baby"></i>
                     <h3 data-i18n="exam-obstetric">Obstetric Ultrasound</h3>
-                    <p data-i18n="exam-obstetric-desc">Specialized ultrasound including simple exams, morphological assessments, obstetric Doppler, and <strong>4D ultrasound</strong>.</p>
+                    <p data-i18n="exam-obstetric-desc">Specialized ultrasound including <strong>4D ultrasound</strong>, simple exams, morphological assessments and obstetric Doppler.</p>
                 </div>
                 <div class="exam-card">
                     <i class="fas fa-mars"></i>
@@ -231,12 +261,18 @@
             <h2 data-i18n="gallery-title">Our Facilities</h2>
             <div class="gallery-grid">
                 
-                <!-- <div class="gallery-item">
+                <div class="gallery-item">
                     <img src="assets/images/RS85-Prestige.png" alt="Exam Room" class="gallery-placeholder">
                     <div class="gallery-overlay">
                         <p data-i18n="gallery-equipment">Advanced Ultrasound Equipment</p>
                     </div>
-                </div> -->
+                </div> 
+                 <div class="gallery-item">
+                    <img src="assets/images/11.png" alt="Exam Room" class="gallery-placeholder">
+                    <!-- <div class="gallery-overlay">
+                        <p data-i18n="gallery-equipment">Advanced Ultrasound Equipment</p>
+                    </div> -->
+                </div> 
                 <div class="gallery-item">
                     <img src="assets/images/coworking_fachada.jpg" alt="Exam Room" class="gallery-placeholder">
                     <div class="gallery-overlay">
@@ -296,14 +332,8 @@
                         <strong data-i18n="contact-phone">Phone:</strong><br>
                         +55 (16) 3600-7151
                     </p>
-                    <!-- <p data-i18n="contact-phone">
-                        Phone:<br>
-                        +55 (16) 3600-7151
-                    </p> -->
                     <p>
-                        <strong data-i18n="hours-label">Hours:</strong><br>
-                        Monday - Friday: 8:00 AM - 6:00 PM<br>
-                        Saturday: 9:00 AM - 1:00 PM
+                        <span data-i18n="contact-hours">Monday - Friday: 8:00 AM - 6:00 PM<br>Saturday: 9:00 AM - 1:00 PM</span>
                     </p>
                     <button class="btn btn-primary whatsapp-btn">
                         <i class="fab fa-whatsapp"></i>
