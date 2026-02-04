@@ -1,0 +1,23 @@
+# LOGUS - Ultrasound Clinic
+# Robots.txt file for SEO optimization
+
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /css/
+Allow: /js/
+Allow: /assets/
+
+# Disallow admin or private directories (if any exist)
+Disallow: /admin/
+Disallow: /.git/
+
+# Specify sitemap
+Sitemap: https://www.logusribeirao.com/sitemap.xml
+
+# Crawl delay settings for various bots
+User-agent: Googlebot
+Crawl-delay: 0
+
+User-agent: Bingbot
+Crawl-delay: 1
