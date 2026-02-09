@@ -47,6 +47,9 @@ const translations = {
         // Exams
         'exams-title': 'Types of exams',
         'exam-womens-health': 'Women\'s Health Ultrasound',
+        'exam-womens-health-desc': 'Comprehensive imaging for women\'s health including transvaginal, breast and axillary ultrasound.',
+        'exam-obstetric': 'Obstetric Ultrasound',
+        'exam-obstetric-desc': 'Specialized ultrasound including <strong>4D ultrasound</strong>, conventional exams, morphological assessments and obstetric doppler.',
         'exam-mens-health': 'Men\'s Health Ultrasound',
         'exam-obstetric': 'Obstetric Ultrasound',
         'exam-3d-4d': '3D/4D Ultrasound',
@@ -128,6 +131,9 @@ const translations = {
         // Exams
         'exams-title': 'Tipos de exames',
         'exam-womens-health': 'Ultrassonografia da Saúde da Mulher',
+        'exam-womens-health-desc': 'Imagens abrangentes para saúde da mulher incluindo transvaginal, mamas e axilas.',
+        'exam-obstetric': 'Ultrassonografia Obstétrica',
+        'exam-obstetric-desc': 'Ultrassom especializado incluindo <strong>ultrassom 4D</strong>, exames convencionais, avaliações morfológicas e doppler obstétrico.',
         'exam-mens-health': 'Ultrassonografia da Saúde do Homem',
         'exam-obstetric': 'Ultrassonografia Obstétrica',
         'exam-3d-4d': 'Ultrassonografia 3D/4D',

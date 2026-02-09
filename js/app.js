@@ -83,7 +83,7 @@ function setupButtons() {
     if (instagramBtn) {
         instagramBtn.addEventListener('click', function(e) {
             e.preventDefault();
-            window.open('https://www.instagram.com', '_blank');
+            window.open('https://www.instagram.com/logus.ultrassom', '_blank');
         });
     }
 }
